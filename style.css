@@ -90,15 +90,21 @@ h1{
     }
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .container {
         max-width: 80vw; /* Wider on smaller screens */
     }
 
     .btn {
-        font-size: 1rem; /* Adjust button text size */
-        padding: 0.8rem; /* Adjust button padding */
+        font-size: 1.2rem; /* Adjust button text size */
+        padding: 1rem; /* Adjust button padding */
+        min-width: 120px; /* Ensure buttons have a minimum width */
+        height: 50px; /* Adjust button height */
+    }
+
+    .blades {
+        width: 90%; /* Make the fan blades larger */
+        height: auto; /* Allow height to adjust based on content */
     }
 }
 
@@ -108,11 +114,28 @@ h1{
     }
 
     .btn {
-        font-size: 0.9rem; /* Smaller button text size */
-        padding: 0.6rem; /* Smaller padding */
+        font-size: 1rem; /* Smaller button text size */
+        padding: 0.8rem; /* Smaller padding */
+        min-width: 100px; /* Ensure buttons have a minimum width */
+        height: 45px; /* Smaller button height */
     }
 
     .blades {
-        width: 80%; /* Make the fan blades smaller */
+        width: 90%; /* Make the fan blades larger */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        font-size: 0.8rem; /* Even smaller button text size for very small screens */
+        padding: 0.5rem; /* Smaller padding */
+        min-width: 80px; /* Ensure buttons have a minimum width */
+        height: 40px; /* Smaller button height */
+    }
+
+    .blades {
+        width: 100%; /* Make the fan blades take full width */
+        height: auto; /* Allow height to adjust based on content */
     }
 }
