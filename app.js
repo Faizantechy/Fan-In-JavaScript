@@ -110,6 +110,15 @@ else if(event.target.classList.contains('btn5')){
 
             document.querySelector('.container').style.marginTop='0'
         }, 2000);
+
+
+        setTimeout(() => {
+
+            h1.style.display='display'
+            h1.textContent=''
+
+            
+        }, 4000);
         
 
     }
